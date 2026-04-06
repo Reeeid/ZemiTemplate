@@ -1,0 +1,44 @@
+name: "✨ 機能追加"
+description: 新しい機能やシステムの提案
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ゲームに追加したい機能を具体的に書いてください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 機能の概要
+      description: どんな機能か一言で
+      placeholder: 例）ターン制戦闘システムを実装する
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 目的・背景
+      description: なぜこの機能が必要か
+      placeholder: 例）D&D風のゲームプレイを実現するため
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 受け入れ条件（Done の基準）
+      description: この機能が「完成した」と言える条件をリストアップ
+      placeholder: |
+        - [ ] プレイヤーと敵が交互に行動できる
+        - [ ] 攻撃・防御・逃げるのアクションが選択できる
+        - [ ] HPが0になったユニットは戦闘から除外される
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足・参考資料
+      description: 参考にしたいゲームや仕様、スケッチ等

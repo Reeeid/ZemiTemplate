@@ -1,0 +1,12 @@
+version: 2
+updates:
+  # GitHub Actions の依存関係を週次チェック
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"

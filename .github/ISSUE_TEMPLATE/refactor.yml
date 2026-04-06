@@ -1,0 +1,38 @@
+name: "♻️ リファクタリング"
+description: 既存コードの品質改善（機能変更なし）
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: target
+    attributes:
+      label: 対象ファイル / クラス
+      placeholder: |
+        - Assets/Scripts/Player/PlayerController.cs
+        - Assets/Scripts/Systems/CombatSystem.cs
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: 現状の問題点
+      description: 何が問題でリファクタリングが必要か
+      placeholder: 例）PlayerControllerが700行あり、移動・戦闘・UI更新が混在している
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 改善内容
+      placeholder: 例）移動をPlayerMovement、戦闘をCombatHandlerに分割する
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: 理由・メリット
+      placeholder: 例）責任を分離することで各クラスのテストが書きやすくなる
+    validations:
+      required: true

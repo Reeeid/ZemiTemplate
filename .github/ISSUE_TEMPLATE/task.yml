@@ -1,0 +1,42 @@
+name: "📋 タスク"
+description: 機能実装以外の作業（セットアップ、調査、ドキュメント等）
+labels: ["task"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: タスクの概要
+      placeholder: 例）Git LFS のセットアップをする
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: やること
+      description: 具体的なステップをリストアップ
+      placeholder: |
+        - [ ] git lfs install を実行
+        - [ ] .gitattributes にLFS対象ファイルを追加
+        - [ ] チームメンバーに手順を共有
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: 完了条件
+      placeholder: 例）全メンバーのローカル環境でLFSが動いている
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      options:
+        - "🔴 高（今週中）"
+        - "🟡 中（今月中）"
+        - "🟢 低（余裕があれば）"
+    validations:
+      required: true

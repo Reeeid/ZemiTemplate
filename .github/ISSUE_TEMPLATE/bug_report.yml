@@ -1,0 +1,59 @@
+name: "🐛 バグレポート"
+description: 予期しない動作や不具合を報告する
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        バグを報告してくれてありがとうございます。再現に必要な情報を詳しく書いてください。
+
+  - type: textarea
+    id: description
+    attributes:
+      label: バグの概要
+      description: 何が起きているか一言で
+      placeholder: 例）プレイヤーがダンジョンの壁をすり抜ける
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 再現手順
+      description: バグを再現するための手順を順番に書いてください
+      placeholder: |
+        1. シーン「DungeonLevel1」を再生
+        2. プレイヤーを北の壁に向かって走らせる
+        3. 壁をすり抜けた
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      placeholder: 例）壁に当たって止まる
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      placeholder: 例）壁をすり抜けてOOBに出た
+    validations:
+      required: true
+
+  - type: input
+    id: unity_version
+    attributes:
+      label: Unity バージョン
+      placeholder: 例）2022.3.20f1
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足（スクショ・動画・コンソールエラー等）
+      description: あれば添付してください
