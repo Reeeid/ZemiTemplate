@@ -4,6 +4,8 @@ description: C# 命名規則・契約プログラミング・Unity コーディ�
 
 # Coding Standards
 
+> 実装の判断は **Unity 公式ドキュメント（https://docs.unity3d.com/）を基準**とする。不明点は公式の仕様・推奨パターンに従うこと。
+
 ## 命名規則
 
 | 対象 | 規則 | 例 |
