@@ -92,6 +92,7 @@
 | `.claude/rules/coding-standards.md` | コード生成時（常時） |
 | `.claude/rules/git-workflow.md` | コミット・PR 作成時 |
 | `.github/decisions/` | 技術判断が必要な時だけ |
+| `DESIGN.md` | UI・アセット・命名に関わる実装時 |
 
 ---
 
